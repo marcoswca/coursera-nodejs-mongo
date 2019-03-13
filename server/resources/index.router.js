@@ -6,6 +6,7 @@ const authRoutes = require('./auth/auth.router');
 const dishRouter = require('./dish/dish.router');
 const promoRouter = require('./promo/promo.router');
 const leaderRouter = require('./leader/leader.router');
+const favoriteRouter = require('./favorites/favorites.router');
 
 const router = express.Router(); // eslint-disable-line new-cap
 
@@ -28,6 +29,9 @@ router.use("/promotions", promoRouter);
 
 // mount leaders routes at /leaders
 router.use("/leaders", leaderRouter);
+
+// mount favorites routes at /favorites
+router.use("/favorites", favoriteRouter);
 
 
 module.exports = router;
