@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const leaderController = require('./leader.controller');
 
 const leaderRouter = express.Router();
